@@ -5,7 +5,7 @@ CFLAGS +=
 CXXFLAGS +=
 LDFLAGS +=
 SOURCES = $(shell find src -name "*.cpp")
-DISTRIBUTABLES += LICENSE.txt presets svg
+DISTRIBUTABLES = svg presets
 
 include $(RACK_DIR)/plugin.mk
 

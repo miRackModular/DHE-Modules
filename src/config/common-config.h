@@ -85,9 +85,9 @@ void config_frame_widget_states(rack::engine::Module *module, int param_id,
                                 int initial_state) {
   module->configParam<FrameWidgetParamQuantity<N>>(
       param_id, 0.F, (float)(N - 1), (float)initial_state, param_name);
-  auto const control_display = dynamic_cast<FrameWidgetParamQuantity<N> *>(
-      module->paramQuantities[param_id]);
-  control_display->set_frame_names(state_names);
+  // auto const control_display = dynamic_cast<FrameWidgetParamQuantity<N> *>(
+  //     module->paramQuantities[param_id]);
+  // control_display->set_frame_names(state_names);
 }
 
 /**

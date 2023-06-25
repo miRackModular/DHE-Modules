@@ -5,12 +5,6 @@
 
 #include <array>
 
-namespace rack {
-namespace engine {
-struct Param;
-}
-} // namespace rack
-
 namespace dhe {
 
 static auto constexpr attenuator_range = Range{0.F, 1.F};

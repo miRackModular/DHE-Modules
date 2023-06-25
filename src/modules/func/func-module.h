@@ -46,11 +46,11 @@ public:
                      "Multiplier" + channel_name + " range",
                      {"0–1", "±1", "0–2", "±2"}, 2);
 
-    auto const operand_knob_param_quantity =
-        dynamic_cast<OperandParamQuantity<Controls> *>(
-            paramQuantities[Controls::AmountKnob + channel]);
+    // auto const operand_knob_param_quantity =
+    //     dynamic_cast<OperandParamQuantity<Controls> *>(
+    //         paramQuantities[Controls::AmountKnob + channel]);
 
-    operand_knob_param_quantity->configure(&controls_, channel, channel_name);
+    // operand_knob_param_quantity->configure(&controls_, channel, channel_name);
   }
 
   auto dataToJson() -> json_t * override {
